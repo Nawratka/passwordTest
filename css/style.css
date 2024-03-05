@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+* root {
+  --strength-width: 0%;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -58,7 +62,7 @@ body {
 
 .strength-meter::before {
   content: "";
-  width: 10%;
+  width: var(--strength-width);
   height: 100%;
   position: absolute;
   top: 0;
