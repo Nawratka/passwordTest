@@ -65,7 +65,6 @@ const specialcharWeakness = function (password) {
 
 const characterTypeWeakness = function (password, regEx, type) {
 	const matches = password.match(regEx) || [];
-    console.log(matches);
 	if (matches.length === 0) return `Password has no ${type}`;
 };
 
